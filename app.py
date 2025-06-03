@@ -59,6 +59,6 @@ if plot:
 
         fig = px.scatter_mapbox(state_df, lat="Latitude", lon="Longitude", size=primary, color=Secondary,
         hover_name="District", hover_data=[primary, Secondary],color_continuous_scale=px.colors.cyclical.IceFire,
-                    zoom=6,mapbox_style="carto-positron",width=1600,height=900)
+                    zoom=7,mapbox_style="carto-positron",width=1600,height=900)
         
         st.plotly_chart(fig,use_container_width=True,autosize=False)
